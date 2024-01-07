@@ -5,82 +5,108 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" media="screen"/>
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="animbkg.js"></script>
     </head>
-    <body class="bg-dark text-white">
+    <body class="text-white">
         <header id="header" class="container-fluid">
             <h1 class="display-1">
                 Kyle Pickle
             </h1>
-            <h1 class="display-4">
+            <h1 class="display-4 pb-5">
                 2024 UC Davis Graduate<br>
                 Computer Science & Engineering
             </h1>
         </header>
-        <div id="bio" class="container-fluid">
+        <div id="bio" class="container py-5">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I am a graduating Computer Science & Engineering student at University of California, Davis.
+                I am a passionate developer with experience working collaboratively in both research and leadership positions, and I am especially interested in the fields of system architecture, networking, and embedded systems/IoT.
+                I am looking to connect myself to jobs and opportunities where I can better myself and my abilities with real-world experience.
             </p>
         </div>
-        <div id="school" class="container-fluid">
+        <div id="school" class="container-fluid pt-5">
             <h2>
                 School Projects
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                As an Undergraduate at UC Davis, I have had many opportunities to showcase my knowledge as a programmer.
+                I've worked on many interesting projects, from coding a functional CPU in Verilog to creating a functional file system in C.
+                Here are just a few highlights:
             </p>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="img-fluid" class="img-fluid" src="https://placekitten.com/416/416">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" class="img-fluid" src="/assets/OLED_ListingPic.jpg">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
-                        Lorem Ipsum
+                        ReChorder
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        I co-created ReChorder for my Embedded Systems class.
+                        It's a device that uses a microphone and an ADC to detect and record chords from instruments such as a piano and guitar, or even full songs.
+                        Once it detects three chords using an FFT, it uses HookTheory's API to put song recommendations on an OLED display based on the chord progression it records.
+                        <br><br>
+                        The first of my major contributions to the project was shrinking down and reworking the CMSIS library to the bare essentials so as to fit on the TI Launchpad we were given to work with.
+                        The second was setting up all of the REST API calls, successfully authenticating and sending a chord progression to HookTheory's servers and displaying the results.
+                        ReChorder was chosen as one of the two best projects in our lab, guaranteeing us an A and making it a finalist for the class.
                     </p>
+                    <button class="btn btn-primary" onclick="window.location.href='https://kywillpickle.github.io/ReChorder/';">Project Page</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="img-fluid" class="img-fluid" src="https://placekitten.com/416/416">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" class="img-fluid" src="/assets/ECS165-thumbnail.png">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
-                        Lorem Ipsum
+                        Database Project
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        For my Databases class at UC Davis, I worked in a team to write an entire database from scratch using Python.
+                        This database system was based on <a href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System">L-Store</a>, which is a hybrid transactional-analytical system created by our professor.
+                        It essentially works by arranging data into a linked list of <i>PageRanges</i>.
+                        These have a fixed set of base pages, followed by linked tail pages containing updates to the base pages which are periodically merged.
+                        The data in these PageRanges is addressed via hash, making it easy to read, update, delete, and even query large sections of the data.
+                        <br><br>
+                        My primary job was to organize the individual pages, and translate them in and out of a binary file format.
+                        I also contributed greatly towards implementing multi-threading in the database, as well as towards the presentation.
+                        Our work on the project was commemorated twice, earning us extra credit and a high grade in the class.
                     </p>
+                    <button class="btn btn-primary" onclick="window.location.href='/assets/ECS165A-milestones.pdf';">Presentations</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="img-fluid" class="img-fluid" src="https://placekitten.com/416/416">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" class="img-fluid" src="/assets/ECS171-graph.png">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
-                        Lorem Ipsum
+                        Credit Score Classifier
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        For my final project in my Machine Learning class, my group and I trained several ML models to classify credit scores.
+                        The goal was to use features like <i>income</i>, <i>outstanding debt</i>, etc. to correctly classify scores as "Good", "Standard", and "Poor".
+                        As it was a research project, we read papers on credit scoring via ML and performed exploratory analysis to determine which models to use in our experiment, and then compared our results to determine which one performed best.
+                        <br><br>
+                        My main contribution was conducting the preliminary research, making the slides, and presenting them to the class.
+                        While our particular dataset wasn't the best, the pre-processing and exploratory analysis we performed proved our understanding and still earned us a high grade.
                     </p>
+                    <button class="btn btn-primary" onclick="window.location.href='/assets/ECS171-presentation.pdf';">Presentation</button>
+                    <button class="btn btn-primary" onclick="window.location.href='/assets/ECS171-report.pdf';">Report</button>
                 </div>
             </div>
         </div>
-        <div id="hackathon" class="container-fluid">
+        <div id="hackathon" class="container-fluid pt-5">
             <h2>
                 Hackathon Projects
             </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
                     <img class="img-fluid" src="https://placekitten.com/416/416">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
                         Lorem Ipsum
                     </h3>
@@ -89,11 +115,11 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
                     <img class="img-fluid" src="https://placekitten.com/416/416">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
                         Lorem Ipsum
                     </h3>
@@ -102,11 +128,11 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
                     <img class="img-fluid" src="https://placekitten.com/416/416">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
                         Lorem Ipsum
                     </h3>
@@ -116,18 +142,18 @@
                 </div>
             </div>
         </div>
-        <div id="work" class="container-fluid">
+        <div id="work" class="container-fluid pt-5">
             <h2>
                 Work Projects
             </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
                     <img class="img-fluid" src="https://placekitten.com/416/416">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
                         Lorem Ipsum
                     </h3>
@@ -136,11 +162,11 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row align-items-center">
+                <div class="col-sm-4 px-0">
                     <img class="img-fluid" src="https://placekitten.com/416/416">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 px-5">
                     <h3>
                         Lorem Ipsum
                     </h3>
@@ -150,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="container-fluid">
+        <div id="contact" class="container-fluid py-5">
             <h2>
                 Contact
             </h2>

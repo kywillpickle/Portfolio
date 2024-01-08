@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Portfolio - Kyle Pickle</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" media="screen"/>
         <script src="https://unpkg.com/scrollreveal"></script>
     </head>
@@ -16,12 +16,21 @@
                 Computer Science & Engineering
             </h1>
         </header>
-        <div id="bio" class="container py-5">
+        <div id="bio" class="container-fluid px-0">
             <p>
                 I am a graduating Computer Science & Engineering student at University of California, Davis.
                 I am a passionate developer with experience working collaboratively in both research and leadership positions, and I am especially interested in the fields of system architecture, networking, and embedded systems/IoT.
                 I am looking to connect myself to jobs and opportunities where I can better myself and my abilities with real-world experience.
+                <br><br>
+                This website and the following projects were all created or co-created by me.
+                <br>
+                Thanks for visiting!
             </p>
+            <a href="mailto: kywillpickle@outlook.com" target="_blank"><button class="btn btn-primary btn-lg">email</button></a>
+            <a href="https://github.com/kywillpickle" target="_blank"><button class="btn btn-primary btn-lg">GitHub</button></a>
+            <a href="https://www.linkedin.com/in/kyle-pickle-3b6148238/" target="_blank"><button class="btn btn-primary btn-lg">LinkedIn</button></a>
+            <a href="https://leetcode.com/kywillpickle/" target="_blank"><button class="btn btn-primary btn-lg">LeetCode</button></a>
+            <br><br>
         </div>
         <div id="school" class="container-fluid pt-5">
             <h2>
@@ -32,11 +41,11 @@
                 I've worked on many interesting projects, from coding a functional CPU in Verilog to creating a functional file system in C.
                 Here are just a few highlights:
             </p>
-            <div class="row align-items-center">
+            <div class="row align-items-stretch">
                 <div class="col-sm-4 px-0">
-                    <img class="img-fluid" class="img-fluid" src="/assets/OLED_ListingPic.jpg">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/OLED_ListingPic.jpg">
                 </div>
-                <div class="col-sm-8 px-5">
+                <div class="col-sm-8 align-self-center p-5">
                     <h3>
                         ReChorder
                     </h3>
@@ -49,36 +58,36 @@
                         The second was setting up all of the REST API calls, successfully authenticating and sending a chord progression to HookTheory's servers and displaying the results.
                         ReChorder was chosen as one of the two best projects in our lab, guaranteeing us an A and making it a finalist for the class.
                     </p>
-                    <button class="btn btn-primary" onclick="window.location.href='https://kywillpickle.github.io/ReChorder/';">Project Page</button>
+                    <a href="https://kywillpickle.github.io/ReChorder/" target="_blank"><button class="btn btn-primary btn-lg">Project Page</button></a>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-sm-4 px-0">
-                    <img class="img-fluid" class="img-fluid" src="/assets/ECS165-thumbnail.png">
-                </div>
-                <div class="col-sm-8 px-5">
+            <div class="row align-items-stretch">
+                <div class="col-sm-8 align-self-center p-5">
                     <h3>
                         Database Project
                     </h3>
                     <p>
                         For my Databases class at UC Davis, I worked in a team to write an entire database from scratch using Python.
-                        This database system was based on <a href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System">L-Store</a>, which is a hybrid transactional-analytical system created by our professor.
+                        This database system was based on <a href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System" target="_blank">L-Store</a>, which is a hybrid transactional-analytical system created by our professor.
                         It essentially works by arranging data into a linked list of <i>PageRanges</i>.
                         These have a fixed set of base pages, followed by linked tail pages containing updates to the base pages which are periodically merged.
                         The data in these PageRanges is addressed via hash, making it easy to read, update, delete, and even query large sections of the data.
                         <br><br>
-                        My primary job was to organize the individual pages, and translate them in and out of a binary file format.
+                        My primary job was to organize the individual pages and translate them in and out of a binary file format.
                         I also contributed greatly towards implementing multi-threading in the database, as well as towards the presentation.
                         Our work on the project was commemorated twice, earning us extra credit and a high grade in the class.
                     </p>
-                    <button class="btn btn-primary" onclick="window.location.href='/assets/ECS165A-milestones.pdf';">Presentations</button>
+                    <a href="/assets/ECS165A-milestones.pdf" target="_blank"><button class="btn btn-primary btn-lg">Presentations</button></a>
+                </div>
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/ECS165-thumbnail.png">
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-stretch">
                 <div class="col-sm-4 px-0">
-                    <img class="img-fluid" class="img-fluid" src="/assets/ECS171-graph.png">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/ECS171-graph.png">
                 </div>
-                <div class="col-sm-8 px-5">
+                <div class="col-sm-8 align-self-center p-5">
                     <h3>
                         Credit Score Classifier
                     </h3>
@@ -90,8 +99,8 @@
                         My main contribution was conducting the preliminary research, making the slides, and presenting them to the class.
                         While our particular dataset wasn't the best, the pre-processing and exploratory analysis we performed proved our understanding and still earned us a high grade.
                     </p>
-                    <button class="btn btn-primary" onclick="window.location.href='/assets/ECS171-presentation.pdf';">Presentation</button>
-                    <button class="btn btn-primary" onclick="window.location.href='/assets/ECS171-report.pdf';">Report</button>
+                    <a href="/assets/ECS171-presentation.pdf" target="_blank"><button class="btn btn-primary btn-lg">Presentation</button></a>
+                    <a href="/assets/ECS171-report.pdf" target="_blank"><button class="btn btn-primary btn-lg">Report</button></a>
                 </div>
             </div>
         </div>
@@ -100,45 +109,94 @@
                 Hackathon Projects
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <a href="https://hackdavis.io/" target="_blank">HackDavis</a> is the largest collegiate hackathon in California, and I've participated every year during my time at UC Davis.
+                While I tackled all of the following projects as a solo programmer, I worked alongside friends across different majors on all three to tackle interdisciplinary, research-filled problems.
             </p>
-            <div class="row align-items-center">
-                <div class="col-sm-4 px-0">
-                    <img class="img-fluid" src="https://placekitten.com/416/416">
-                </div>
-                <div class="col-sm-8 px-5">
+            <div class="row align-items-stretch">
+                <div class="col-sm-6 align-self-center p-5">
                     <h3>
-                        Lorem Ipsum
+                        Arboretum Gallerium
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        An interactive map for learning from and navigating in the UC Davis Arboretum, with useful information about COVID-19, local wildlife, biodiversity, and more.
+                        It was built using Unity, as well as 3D-rendered data borrowed from Google Maps.
+                        <br><br>
+                        This project was made over the course of 36 hours for the UC Davis HackDavis2021 hackathon.
+                        It won the <i>Best Health Hack</i> award for helping connect people with the outside world while coping with social distancing.
                     </p>
+                    <a href="https://github.com/kywillpickle/Arboretum-Gallerium" target="_blank"><button class="btn btn-primary btn-lg">GitHub</button></a>
+                    <a href="https://devpost.com/software/arboretum-gallerium" target="_blank"><button class="btn btn-primary btn-lg">Devpost</button></a>
+                </div>
+                <div class="col-sm-6 pl-0 pr-5">
+                    <div class="row align-items-stretch" style="min-height: 100%;">
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/arbgal1.png">
+                        </div>
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/arbgal2.png">
+                        </div>
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/arbgal3.png">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-sm-4 px-0">
-                    <img class="img-fluid" src="https://placekitten.com/416/416">
+            <div class="row align-items-stretch">
+                <div class="col-sm-6 pl-5 pr-0">
+                    <div class="row align-items-stretch" style="min-height: 100%;">
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/dssbdg1.png">
+                        </div>
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/dssbdg2.png">
+                        </div>
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/dssbdg3.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-8 px-5">
+                <div class="col-sm-6 align-self-center p-5">
                     <h3>
-                        Lorem Ipsum
+                        DSSBadge+
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        A revamp of UC Davis Campus Ready's <a href="https://campusready.ucdavis.edu/symptom-survey" target="_blank">Daily Symptom Survey</a> badge system, intended to be less prone to tampered survey results.
+                        It is a Python package with extensive documentation and examples designed to be simple yet developer friendly.
+                        <br><br>
+                        It was completed over the course of 24 hours and submitted as part of the HackDavis2022 hackathon.
+                        It was further forwarded to and commemorated by the CampusReady program at UC Davis.
                     </p>
+                    <a href="https://github.com/kywillpickle/DSSBadgePlus" target="_blank"><button class="btn btn-primary btn-lg">GitHub</button></a>
+                    <a href="https://devpost.com/software/dssbadge" target="_blank"><button class="btn btn-primary btn-lg">Devpost</button></a>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-sm-4 px-0">
-                    <img class="img-fluid" src="https://placekitten.com/416/416">
-                </div>
-                <div class="col-sm-8 px-5">
+            <div class="row align-items-stretch">
+                <div class="col-sm-6 align-self-center p-5">
                     <h3>
-                        Lorem Ipsum
+                        Campus Connected
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Built using the framework ReTool and a bit of SQL, Campus Connected was created to help bridge the connection between professors and students in the classroom.
+                        We found that many students these days have trouble expressing their concerns, and at the same time TAs and professors are bombarded with disorganized emails and feedback.
+                        By limiting the number of inputs and creating a user-friendly UI, Campus Connected allows professors to easily gain anonymous feedback and better understand and help their students.
+                        <br><br>
+                        It completed over the course of 24 hours and submitted as part of the HackDavis2023 hackathon.
+                        In won in the <i>Best Use of ReTool</i> category.
                     </p>
+                    <a href="https://devpost.com/software/campus-connected" target="_blank"><button class="btn btn-primary btn-lg">Devpost</button></a>
+                </div>
+                <div class="col-sm-6 pl-0 pr-5">
+                    <div class="row align-items-stretch" style="min-height: 100%;">
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/camcon1.jpeg">
+                        </div>
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/camcon2.jpeg">
+                        </div>
+                        <div class="col-sm-4 py-3 px-2">
+                            <img class="img-fluid rounded-3" style="min-height: 100%; min-width: 100%;" src="/assets/hackathon/camcon3.jpeg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,42 +205,125 @@
                 Work Projects
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                As a student assistant at the <a href="https://cltc.ucdavis.edu/" target="_blank">California Lighting Technology Center</a> (CLTC), I've had the chance to collaborate on various research projects with the goals of standardization, building automation, and efficiency.
+                The following are some projects I have been involved with, as well as my hand in them:
             </p>
-            <div class="row align-items-center">
+            <div class="row align-items-stretch">
                 <div class="col-sm-4 px-0">
-                    <img class="img-fluid" src="https://placekitten.com/416/416">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%; object-position: 25% 0;" src="https://raw.githubusercontent.com/kywillpickle/CLTC-Data-Visualizer/main/assets/levelIn-screenshot.jpg">
                 </div>
-                <div class="col-sm-8 px-5">
+                <div class="col-sm-8 align-self-center p-5">
                     <h3>
-                        Lorem Ipsum
+                        Data Utility
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        This project is a front-end Python/JavaScript tool made for the CLTC to dissect, visualize, and compare chronological sensor data.
+                        It takes a CSV file with time in the first column and labels for all subsequent columns.
+                        Feel free to read the README on the repository page for more information.
+                        <br><br>
+                        It was developed by me for use with an experiment at Sonoma Clean Power's Advanced Energy Center (AEC) with the intention of analyzing and comparing sensor readings to determine net energy savings produced by an IoT-integrated Solatube.
+                        Having worked closely with and taking input from engineers at the CLTC, it has been reworked several times to be able to handle multiple input/output formats.
                     </p>
+                    <a href="https://kywillpickle.github.io/CLTC-Data-Visualizer/" target="_blank"><button class="btn btn-primary btn-lg">Webpage</button></a>
+                    <a href="https://github.com/kywillpickle/CLTC-Data-Visualizer" target="_blank"><button class="btn btn-primary btn-lg">GitHub</button></a>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-sm-4 px-0">
-                    <img class="img-fluid" src="https://placekitten.com/416/416">
-                </div>
-                <div class="col-sm-8 px-5">
+            <div class="row align-items-stretch">
+                <div class="col-sm-8 align-self-center p-5">
                     <h3>
-                        Lorem Ipsum
+                        Building Automation
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Another project that I had a large hand in is the CLTC's integrated controls project at the Integrated Building Control System (IBCS) research project at the Barn.
+                        This goal of this project is to tie together multiple standalone building subsystems – such as lighting and occupancy, windows, shading, HVAC, etc. – into a single integrated system to increase energy efficiency.
+                        For example, our control scheme may open the shades when it is sunny and cold to let in more heat, or close the windows when the air handler is turned on.
+                        <br><br>
+                        As a fairly experienced programmer, I helped write a majority of the schemes used for the project.
+                        These programs were written using Tridium Niagara's drag-and-drop IDE, and also required extensive knowledge of local networks and BACnet points.
+                        Using experience gained from some of my previous projects, I also coded, compiled, signed, and imported my own <i>CLTC-Uitl</i> module to handle custom HTTP API requests.
+                    </p>
+                </div>
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/barn.png">
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/occsen.jpg">
+                </div>
+                <div class="col-sm-8 align-self-center p-5">
+                    <h3>
+                        Occupancy Sensor Testing
+                    </h3>
+                    <p>
+                        At time of writing I am working on a research project into more reliable and repeatable methods of IR occupancy sensor testing.
+                        The current dominating procedure is the NEMA standard, which simply involves walking around in a grid with a clipboard and noting which squares are noticed by the sensor.
+                        Our goal is to implement a more scientific and less tedious approach, likely with a heat-emitting mannequin on a robot.
+                        <br><br>
+                        I have been working with CLTC engineers and other student assistants to research a solution, and it will be one of my tasks during the rest of my time at the CLTC to program the robot and data collection system.
                     </p>
                 </div>
             </div>
         </div>
-        <div id="contact" class="container-fluid py-5">
+        <div id="personal" class="container-fluid pt-5">
             <h2>
-                Contact
+                Personal Projects
             </h2>
             <p>
-                Lorem ipsum dolor sit amet: consectetur adipiscing elit
+                Modding and game design has always been hobbies of mine, and are a big reason as to why I got into Computer Science as a field.
+                Especially during the pandemic, creating servers and communities was a way for me to have fun with friends.
+                While the following are far from professional projects, I believe they showcase my creativity and willingness to learn, even in my free time.
             </p>
+            <a href="https://topnotchgames.net" target="_blank"><button class="btn btn-primary btn-lg">(Old) Personal Website</button></a>
+            <br><br>
+            <div class="row align-items-stretch">
+                <div class="col-sm-8 align-self-center p-5">
+                    <h3>
+                        Wizards vs Robots
+                    </h3>
+                    <p>
+                        I started this project at the start of 2021, and have successfully developed it into a (mostly) functional multiplayer videogame.
+                        Working on the entire project on my own in just my free time certainly slowed my progress, but it was exciting to learn about all of the important aspects that go into a finished product.
+                        <br><br>
+                        It was created within Unity using C#, and all of the assets were drawn and animated by me.
+                        The multiplayer functionality especially showcases my knowledge of OOP and multi-threading techniques, allowing the server to successfully communicte with a client.
+                        <br><br>
+                        Unfortunately Unity MLAPI did not have support for WebGL when I created the project, but you can find the itch.io page below (the password is "boop"). Otherwise feel free to check out the old singleplayer demo.
+                    </p>
+                    <a href="https://thebuttermatrix.itch.io/wizards-vs-robots" target="_blank"><button class="btn btn-primary btn-lg">itch.io</button></a>
+                    <a href="https://www.topnotchgames.net/wizardsvrobots/" target="_blank"><button class="btn btn-primary btn-lg">demo</button></a>
+                </div>
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/wvr.png">
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-sm-4 px-0">
+                    <img class="img-fluid" style="min-height: 100%; min-width: 100%;" src="/assets/frocra.png">
+                </div>
+                <div class="col-sm-8 align-self-center p-5">
+                    <h3>
+                        FrogCraft
+                    </h3>
+                    <p>
+                        While it sounds silly, creating mods and hosting servers for Minecraft have seriously taught me very useful skills involving networking/DNS, the Linux command line, and coding/compiling with Java that I still use to this day.
+                        <br><br>
+                        FrogCraft is a Minecraft Forge mod for 1.20 that I started working on just before Summer 2021.
+                        While far from finished, the final project is inspired by liminal spaces, eldritch horror, and of course, frogs.
+                        As my passion project and only mod, I've done all of the coding, modeling, texturing, etc. to familiaize myself with the techniques.
+                        I've had a lot of fun with it, creating all of the textures myself and even composing a song for a music disc.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="links" class="container-fluid py-5">
+            <h2>
+                Links
+            </h2>
+            <a href="mailto: kywillpickle@outlook.com" target="_blank"><button class="btn btn-primary btn-lg">email</button></a>
+            <a href="https://github.com/kywillpickle" target="_blank"><button class="btn btn-primary btn-lg">GitHub</button></a>
+            <a href="https://www.linkedin.com/in/kyle-pickle-3b6148238/" target="_blank"><button class="btn btn-primary btn-lg">LinkedIn</button></a>
+            <a href="https://leetcode.com/kywillpickle/" target="_blank"><button class="btn btn-primary btn-lg">LeetCode</button></a>
         </div>
     </body>
 </html>

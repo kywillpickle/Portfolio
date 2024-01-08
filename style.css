@@ -4,14 +4,35 @@
 @font-face {font-family: Raleway-Regular;src: url(/fonts/Raleway-Regular.ttf);}
 
 body {
-    background-color: rgb(20, 20, 20);
+    background-image: url(/assets/colorstudybkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 body * {
     font-family: Raleway-Light;
     text-align: center;
 }
+a {
+    transition: all 0.5s;
+    color: #77ffaa;
+}
+a:hover {
+    color: #55bb88;
+}
+button {
+    transition: all 0.5s;
+    background-color: #77ffaa !important;
+    color:black !important;
+    border-color: #77ffaa  !important;
+    min-width: 10%;
+}
+button:hover {
+    background-color: #55bb88 !important;
+    border-color: #55bb88  !important;
+}
 img {
-    width: 100%;
+    transition: all 0.5s;
     overflow: hidden;
     padding-left: 0;
 }
@@ -20,32 +41,58 @@ body > div > h2 {
 }
 body > div > p {
     font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+body > div > div {
+    align-items: stretch;
 }
 body > div > div * {
     text-align: left;
+}
+body > div > div > div {
+    min-height: 100%;
+}
+body > div > div > div > div img:hover {
+    transform: scale(1.05);
+}
+body > div > div button {
+    min-width: 15%;
+    margin-right: 5px;
 }
 body > div > div p {
     font-size: 25px;
 }
 body > div > div h3 {
+    max-width: 60%;
+    transition: all 0.5s;
     font-size: 40px;
 }
-body div .row:nth-of-type(odd) {
+body > div > div h3:hover {
+    transform: scale(1.05);
+    transform-origin: left;
+}
+body > div > div.row:nth-of-type(odd) {
     background-color:#00000044;
 }
 #header {
-    height: 60%;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 #bio {
-    height: 40%;
+    padding-bottom: 50px;
 }
 #school {
-    background-color: rgb(36, 30, 55);
+    background-color: rgb(36, 30, 55, 0.8);
 }
 #hackathon {
-    background-color: rgb(30, 35, 55);
+    background-color: rgb(30, 35, 55, 0.8);
 }
 #work {
-    background-color: rgb(30, 53, 55);
+    background-color: rgb(30, 46, 55, 0.8);
+}
+#personal {
+    background-color: rgb(24, 44, 43, 0.8);
+}
+#links {
+    background-color: rgb(20, 20, 20, 0.8);
 }

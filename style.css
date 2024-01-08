@@ -8,6 +8,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 body * {
     font-family: Raleway-Light;
@@ -33,11 +35,17 @@ button:hover {
 }
 img {
     transition: all 0.5s;
+    object-fit: cover;
     overflow: hidden;
     padding-left: 0;
 }
 body > div > h2 {
+    transition: all 0.5s;
+    display: inline-block;
     font-size: 50px;
+}
+body > div > h2:hover {
+    transform: scale(1.05);
 }
 body > div > p {
     font-size: 25px;
@@ -64,13 +72,12 @@ body > div > div p {
     font-size: 25px;
 }
 body > div > div h3 {
-    max-width: 60%;
+    display: inline-block;
     transition: all 0.5s;
     font-size: 40px;
 }
 body > div > div h3:hover {
     transform: scale(1.05);
-    transform-origin: left;
 }
 body > div > div.row:nth-of-type(odd) {
     background-color:#00000044;

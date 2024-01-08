@@ -4,7 +4,7 @@
 @font-face {font-family: Raleway-Regular;src: url(/fonts/Raleway-Regular.ttf);}
 
 body {
-    background-image: url(/assets/colorstudybkg.png);
+    background-image: url(https://kywillpickle.github.io/Portfolio/assets/colorstudybkg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

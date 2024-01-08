@@ -1,10 +1,10 @@
-@font-face {font-family: Raleway-SemiBold;src: url(https://kywillpickle.github.io/Portfolio/fonts/Raleway-SemiBold.ttf);}
-@font-face {font-family: Raleway-Italic;src: url(https://kywillpickle.github.io/Portfolio/fonts/Raleway-Italic.ttf);}
-@font-face {font-family: Raleway-Light;src: url(https://kywillpickle.github.io/Portfolio/fonts/Raleway-Light.ttf);}
-@font-face {font-family: Raleway-Regular;src: url(https://kywillpickle.github.io/Portfolio/fonts/Raleway-Regular.ttf);}
+@font-face {font-family: Raleway-SemiBold;src: url(https://kywillpickle.github.io/portfolio/fonts/Raleway-SemiBold.ttf);}
+@font-face {font-family: Raleway-Italic;src: url(https://kywillpickle.github.io/portfolio/fonts/Raleway-Italic.ttf);}
+@font-face {font-family: Raleway-Light;src: url(https://kywillpickle.github.io/portfolio/fonts/Raleway-Light.ttf);}
+@font-face {font-family: Raleway-Regular;src: url(https://kywillpickle.github.io/portfolio/fonts/Raleway-Regular.ttf);}
 
 body {
-    background-image: url(https://kywillpickle.github.io/Portfolio/assets/colorstudybkg.png);
+    background-image: url(https://kywillpickle.github.io/portfolio/assets/colorstudybkg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

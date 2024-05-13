@@ -3,6 +3,10 @@
 @font-face {font-family: Raleway-Light;src: url(https://kywillpickle.github.io/portfolio/fonts/Raleway-Light.ttf);}
 @font-face {font-family: Raleway-Regular;src: url(https://kywillpickle.github.io/portfolio/fonts/Raleway-Regular.ttf);}
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(https://kywillpickle.github.io/portfolio/assets/colorstudybkg.png);
     background-size: cover;

@@ -79,8 +79,11 @@ body > div > div h3 {
 body > div > div h3:hover {
     transform: scale(1.05);
 }
+body > div > div.row:nth-of-type(even) {
+    background-color:#00000060;
+}
 body > div > div.row:nth-of-type(odd) {
-    background-color:#00000044;
+    background-color:#00000030;
 }
 #header {
     padding-top: 150px;

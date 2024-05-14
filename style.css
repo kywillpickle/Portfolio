@@ -129,7 +129,7 @@ span.badge {
     cursor: pointer;
 }
 span.badge:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 .topic-api {
     background-color: rgba(233, 94, 94, 0.8);
